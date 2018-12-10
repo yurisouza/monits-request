@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitsRequest.Core", "MonitsRequest.Core\MonitsRequest.Core.csproj", "{138373AC-A3B2-4610-A260-D6AF66A57DDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitsRequest.Domain", "MonitsRequest.Domain\MonitsRequest.Domain.csproj", "{BC3623F0-DFFC-4F65-9822-06DE0D89B97C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{138373AC-A3B2-4610-A260-D6AF66A57DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138373AC-A3B2-4610-A260-D6AF66A57DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138373AC-A3B2-4610-A260-D6AF66A57DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138373AC-A3B2-4610-A260-D6AF66A57DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC3623F0-DFFC-4F65-9822-06DE0D89B97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC3623F0-DFFC-4F65-9822-06DE0D89B97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC3623F0-DFFC-4F65-9822-06DE0D89B97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC3623F0-DFFC-4F65-9822-06DE0D89B97C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {812EC44D-93EF-4AC4-B3F0-D3AB5DE9E42A}
+	EndGlobalSection
+EndGlobal
