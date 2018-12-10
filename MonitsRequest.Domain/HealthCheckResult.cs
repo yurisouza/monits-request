@@ -12,7 +12,7 @@ namespace MonitsRequest.Domain
         public DateTime ResponseAt { get; set; }
         public int StatusCode { get; set; }
         public string ContentResult { get; set; }
-        private long ResponseInMilliseconds { get; set; }
+        public int ResponseInMilliseconds { get; set; }
 
         public void CalculeteResponseTime()
         {

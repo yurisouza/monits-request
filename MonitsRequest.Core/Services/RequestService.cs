@@ -32,7 +32,7 @@ namespace MonitsRequest.Core.Services
             healthCheckResult.ResponseAt = DateTime.UtcNow;
 
             healthCheckResult.CalculeteResponseTime();
-            healthCheckResult.ContentResult = response.Content;
+            healthCheckResult.ContentResult = response.Content.Substring(0, 500);
             healthCheckResult.StatusCode = (int)response.StatusCode;
 
             _healthCheckResultRepository.Insert(healthCheckResult);

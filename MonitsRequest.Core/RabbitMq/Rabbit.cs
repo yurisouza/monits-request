@@ -82,7 +82,7 @@ namespace MonitsRequest.Core.RabbitMq
 
             var factory = new ConnectionFactory
             {
-                Uri = new Uri("amqp://guest:guest@localhost:5672/"),
+                Uri = new Uri("amqp://guest:guest@35.237.58.96:5672/"),
                 AutomaticRecoveryEnabled = true
             };
 

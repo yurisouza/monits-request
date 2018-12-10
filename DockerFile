@@ -1,0 +1,15 @@
+FROM microsoft/dotnet:2.1-sdk AS builder
+
+WORKDIR /source
+COPY ./ ./
+
+RUN dotnet restore
+RUN dotnet publish -c release --output /app/
+
+# Build runtime image
+FROM microsoft/dotnet:2.1-runtime
+
+WORKDIR /app
+COPY --from=builder /app .
+
+ENTRYPOINT [ "dotnet", "MonitsRequest.Core.dll"]

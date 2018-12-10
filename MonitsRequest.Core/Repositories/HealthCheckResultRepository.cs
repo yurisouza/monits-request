@@ -29,12 +29,12 @@ namespace MonitsRequest.Core.Repositories
             try
             {
                 _connection.Open();
-                _connection.Execute("INSERT INTO HealthCheckResult (HealthCheckResultKey, HealthCheckKey, RequestAt, ResponseAt, StatusCode, ResponseInMilliseconds) VALUES (@HealthCheckResultKey, @HealthCheckKey, @RequestAt, @ResponseAt, @StatusCode, @ResponseInMilliseconds)", entity);
+                _connection.Execute("INSERT INTO HealthCheckResult (HealthCheckResultKey, HealthCheckKey, RequestAt, ResponseAt, StatusCode, ContentResult, ResponseInMilliseconds) VALUES (@HealthCheckResultKey, @HealthCheckKey, @RequestAt, @ResponseAt, @StatusCode, @ContentResult, @ResponseInMilliseconds)", entity);
                 return entity;
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                throw new Exception(ex.Message);
             }
             finally
             {
